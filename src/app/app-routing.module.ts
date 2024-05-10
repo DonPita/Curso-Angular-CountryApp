@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AboutPageComponent } from './shared/pages/about-page/about-page.component';
 import { ContactPageComponent } from './shared/pages/contact-page/contact-page.component';
+import { ByCountryPageComponent } from './countries/pages/by-country-page/by-country-page.component';
 
 
 const routes: Routes = [
@@ -30,6 +31,7 @@ const routes: Routes = [
   },
   {
     path: '**',
+    component: ByCountryPageComponent,
     redirectTo: 'countries'
   }
 ];
